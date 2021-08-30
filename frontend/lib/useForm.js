@@ -26,6 +26,7 @@ export default function useForm(initial = {}) {
     const blankState = Object.fromEntries(
       Object.entries(inputs).map(([key]) => [key, ''])
     );
+    console.log(blankState);
     setInputs(blankState);
   }
 
